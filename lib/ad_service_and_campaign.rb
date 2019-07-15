@@ -11,6 +11,7 @@ module AdServiceAndCampaign
   end
 
   def self.initialize_campaigns(ads_count)
+    return false unless ads_count.positive?
     ads_count.times do |index|
       job_id = rand(0..999_999).to_s
       status = Campaign::STATUS_LIST[rand(0..2)]
