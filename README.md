@@ -26,33 +26,39 @@ AdServiceAndCampaign.compare
     :remote_reference => "1",
     :discrepancies => [{
         :status => {
-            :remote => "enabled",:local => "active"
+            :remote => "enabled",
+            :local => "active"
         }
     }, {
         :description => {
-            :remote => "Description for campaign 11",:local => "test description 21650"
+            :remote => "Description for campaign 11",
+            :local => "test description 21650"
         }
     }]
 }, {
     :remote_reference => "2",
     :discrepancies => [{
         :status => {
-            :remote => "disabled",:local => "deleted"
+            :remote => "disabled",
+            :local => "deleted"
         }
     }, {
         :description => {
-            :remote => "Description for campaign 12",:local => "test description 477737"
+            :remote => "Description for campaign 12",
+            :local => "test description 477737"
         }
     }]
 }, {
     :remote_reference => "3",
     :discrepancies => [{
         :status => {
-            :remote => "enabled",:local => "paused"
+            :remote => "enabled",
+            :local => "paused"
         }
     }, {
         :description => {
-            :remote => "Description for campaign 13",:local => "test description 999298"
+            :remote => "Description for campaign 13",
+            :local => "test description 999298"
         }
     }]
 }]
