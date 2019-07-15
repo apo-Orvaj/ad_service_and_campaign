@@ -69,7 +69,7 @@ AdServiceAndCampaign.compare
 1. Set up rbenv or rvm
 2. Install ruby version 2.3.1
 
-- Clone the repository and move the 'ad_service_and_campaign' directory.
+- Clone the repository and move in the 'ad_service_and_campaign' directory.
 - Build the gem with:
 ```
 gem build ad_service_and_campaign.gemspec
