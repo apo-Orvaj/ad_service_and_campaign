@@ -13,7 +13,6 @@ AdServiceAndCampaign is the central Service object, where the comparison takes p
 
 ```
 AdServiceAndCampaign.compare
-
 ``` 
 
 - It calls the AdService to connect with the external JSON API to fetch the "ads".
@@ -23,7 +22,40 @@ AdServiceAndCampaign.compare
 ## Service output format:
 	
 ```
-[{:remote_reference=>"1", :discrepancies=>[{:status=>{:remote=>"enabled", :local=>"active"}}, {:description=>{:remote=>"Description for campaign 11", :local=>"test description 21650"}}]}, {:remote_reference=>"2", :discrepancies=>[{:status=>{:remote=>"disabled", :local=>"deleted"}}, {:description=>{:remote=>"Description for campaign 12", :local=>"test description 477737"}}]}, {:remote_reference=>"3", :discrepancies=>[{:status=>{:remote=>"enabled", :local=>"paused"}}, {:description=>{:remote=>"Description for campaign 13", :local=>"test description 999298"}}]}]
+[{
+    : remote_reference => "1",
+    : discrepancies => [{
+        : status => {
+            : remote => "enabled",: local => "active"
+        }
+    }, {
+        : description => {
+            : remote => "Description for campaign 11",: local => "test description 21650"
+        }
+    }]
+}, {
+    : remote_reference => "2",
+    : discrepancies => [{
+        : status => {
+            : remote => "disabled",: local => "deleted"
+        }
+    }, {
+        : description => {
+            : remote => "Description for campaign 12",: local => "test description 477737"
+        }
+    }]
+}, {
+    : remote_reference => "3",
+    : discrepancies => [{
+        : status => {
+            : remote => "enabled",: local => "paused"
+        }
+    }, {
+        : description => {
+            : remote => "Description for campaign 13",: local => "test description 999298"
+        }
+    }]
+}]
 ```
 
 ## Installation:
@@ -50,10 +82,10 @@ AdServiceAndCampaign.compare
 ```
 
 ## Specifications/Dependencies:
-AdServiceAndCampaign Version: 0.1.0
-ruby version: 2.3.1
-rspec
-rake
-bundler
+- AdServiceAndCampaign Version: 0.1.0
+- ruby version: 2.3.1
+- rspec
+- rake
+- bundler
 
 
