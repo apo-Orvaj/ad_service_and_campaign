@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
   end
   spec.files << "lib/ad_service.rb"
   spec.files << "lib/campaign.rb"
+  spec.files.delete("ad_service_and_campaign-0.1.0.gem")
   
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
@@ -35,5 +36,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency "rspec"
 end
