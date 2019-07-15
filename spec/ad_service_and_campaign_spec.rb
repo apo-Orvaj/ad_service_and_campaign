@@ -25,7 +25,5 @@ RSpec.describe AdServiceAndCampaign do
 
   it "should compare the local and remote values" do
   	expect(AdServiceAndCampaign.compare).to be_truthy
-
-  	# expect(AdServiceAndCampaign.compare).t
   end
 end
