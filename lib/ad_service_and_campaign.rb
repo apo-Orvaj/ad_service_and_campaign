@@ -13,9 +13,10 @@ module AdServiceAndCampaign
   def self.initialize_campaigns(ads_count)
     return false unless ads_count.positive?
     ads_count.times do |index|
+      id = rand(0..99)
       job_id = rand(0..999_999).to_s
       status = Campaign::STATUS_LIST[rand(0..2)]
-      campaign = Campaign.new(job_id, status, (index+1).to_s, "test description #{job_id}")
+      campaign = Campaign.new(id, job_id, status, (index+1).to_s, "Description for campaign #{id}")
       @campaign_ids << campaign.object_id
     end
   end

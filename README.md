@@ -32,7 +32,7 @@ AdServiceAndCampaign.compare
     }, {
         :description => {
             :remote => "Description for campaign 11",
-            :local => "test description 21650"
+            :local => "Description for campaign 33"
         }
     }]
 }, {
@@ -45,7 +45,7 @@ AdServiceAndCampaign.compare
     }, {
         :description => {
             :remote => "Description for campaign 12",
-            :local => "test description 477737"
+            :local => "Description for campaign 70"
         }
     }]
 }, {
@@ -58,7 +58,7 @@ AdServiceAndCampaign.compare
     }, {
         :description => {
             :remote => "Description for campaign 13",
-            :local => "test description 999298"
+            :local => "Description for campaign 45"
         }
     }]
 }]
